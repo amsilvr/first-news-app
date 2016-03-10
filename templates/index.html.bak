@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+    <head></head>
+    <body>
+        <h1>Deaths during the L.A. riots</h1>
+		<table border='1' cellpadding='7'>
+			<tr>
+				<th>Name</th>
+			</tr>
+			{% for obj in object_list %}
+			<tr>
+				<td>{{ obj.full_name }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+    </body>
+</html>
